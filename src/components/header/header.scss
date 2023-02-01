@@ -1,7 +1,15 @@
 .header {
+  flex-direction: row;
   background-color: brown;
   color: bisque;
-  position: relative;
+  display: flex;
   padding: 1rem;
-  min-height: 20vh;
+}
+.text {
+  color: greenyellow;
+  font-size: 60px;
+}
+.img {
+  width: 250px;
+  height: 150px;
 }
