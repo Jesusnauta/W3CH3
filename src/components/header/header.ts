@@ -15,6 +15,9 @@ export class Header extends Component {
     return `
     <header class="header">
       <h1>${this.title}</h1>
+      <p role="generic" aria-label="info"></p>
+      <p class="text"> 'TODOS MERECEN UNA FAMILIA'</p>
+
     </header>
     `;
   }
