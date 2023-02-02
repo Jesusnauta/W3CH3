@@ -7,6 +7,7 @@ export type ProtoPetStructure = {
   name: string;
   breed: string;
   isAdopted: boolean;
+  owner: string;
 };
 
 export type PetStructure = HasId & ProtoPetStructure;
@@ -20,7 +21,7 @@ export class Pet implements PetStructure {
     return ('000000' + aNumbers[0]).slice(-6);
   }
 
-  constructor(public name: string, public breed: string) {
+  constructor(public name: string, public breed: string, public owner: string) {
     this.id = Pet.generateId();
     this.isAdopted = false;
   }
