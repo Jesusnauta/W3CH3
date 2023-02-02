@@ -21,6 +21,8 @@ export class Pets extends Component {
           <div>Nombre del perro: ${item.name}</div>
           <div>Raza: ${item.breed}</div>
           <div>¿Adoptado?: ${item.isAdopted}</div>
+          <div>Dueño: ${item.owner}</div>
+
         </li>`
       )
       .join('\n');
